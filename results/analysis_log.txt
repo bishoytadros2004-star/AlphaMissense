@@ -1,0 +1,51 @@
+Input rows: 1544
+Labeled variants: 149 (P=69, B=80); without AlphaMissense score (excluded): 5
+  missing by class: P=2, B=3
+
+== Discrimination ==
+Pooled, all genes                          AUROC 0.976 (95% CI 0.953-0.992)  [n=144 (P=67, B=77)]
+Within-gene only (gene-adjusted)           AUROC 0.981 (95% CI 0.951-0.998)  [630 same-gene P-B pairs]
+Pooled, excluding COQ8A                    AUROC 0.958 (95% CI 0.923-0.987)  [n=102 (P=37, B=65)]
+COQ8A alone                                AUROC 1.000 (95% CI 1.000-1.000)  [n=42 (P=30, B=12)]
+Pooled AUPRC                               0.968 (95% CI 0.941-0.990); no-skill baseline = prevalence 0.465
+
+== Published AlphaMissense cut-offs on ClinVar-labeled variants ==
+Ambiguous band (0.34-0.564): 5 of 144 labeled variants (3.5%); P in band=4, B in band=1
+Pathogenic called (>0.564): sensitivity 59/67 = 0.881
+Benign called (<0.34): specificity 71/77 = 0.922  (ambiguous counted as not-benign)
+
+== Benign variants scored as pathogenic (possible mislabels or model errors) ==
+ gene                                      Name      s  stars
+PDSS1 NM_014317.5(PDSS1):c.407T>G (p.Phe136Cys) 0.7083      2
+ COQ4  NM_016035.5(COQ4):c.483G>C (p.Glu161Asp) 0.8840      2
+ COQ9  NM_020312.4(COQ9):c.826C>T (p.Arg276Trp) 0.6614      2
+ COQ6   NM_182476.3(COQ6):c.278G>A (p.Gly93Asp) 0.6362      2
+PDSS2  NM_020381.4(PDSS2):c.281T>C (p.Leu94Pro) 0.9213      1
+
+== Pathogenic variants scored below 0.34 (model misses) ==
+ gene                                      Name      s  stars
+COQ8B NM_024876.4(COQ8B):c.532C>T (p.Arg178Trp) 0.3246      2
+ COQ4  NM_016035.5(COQ4):c.718C>T (p.Arg240Cys) 0.2960      2
+PDSS2 NM_020381.4(PDSS2):c.874A>G (p.Lys292Glu) 0.3007      1
+ COQ4  NM_016035.5(COQ4):c.305G>A (p.Arg102His) 0.2030      1
+
+== VUS (AlphaMissense only; NOT a clinical reclassification) ==
+VUS scored: 1369 of 1395; unscored: 26
+am_band  ambiguous  likely_benign  likely_pathogenic
+gene                                                
+COQ10A           5             25                 12
+COQ10B           4             11                  7
+COQ2            10             96                 39
+COQ3             3             38                  7
+COQ4            13             77                 16
+COQ5             2             36                  9
+COQ6            13            102                 44
+COQ7             4             50                 28
+COQ8A           21            140                 77
+COQ8B            8             65                 17
+COQ9            13            104                 15
+PDSS1           11            108                 25
+PDSS2           13             83                 18
+VUS in likely_pathogenic band: 314 of 1369
+
+Seed=20261118, bootstrap replicates=2000

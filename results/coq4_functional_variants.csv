@@ -1,0 +1,6 @@
+protein_variant,am_pathogenicity,am_class,n_rows,yeast_call,evidence_source
+C231Y,0.3427,ambiguous,1,partial,Sarto thesis Padova 2023/24 abstract
+G95D,0.9475,likely_pathogenic,1,lost,Mero 2021 via OMIM summary (unverified; primary paper not read)
+P193S,0.7615,likely_pathogenic,1,lost,Mero 2021 via OMIM summary (unverified; primary paper not read)
+R102H,0.203,likely_benign,1,partial,Sarto thesis Padova 2023/24 abstract; Mero 2021 via OMIM (unverified)
+R240C,0.296,likely_benign,1,lost,UniProt variant page; Brea-Calvo 2015 AJHG; Mero 2021 via OMIM (unverified)

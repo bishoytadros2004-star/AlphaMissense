@@ -1,0 +1,10 @@
+gene,variant,clinvar_label,review_stars,alphamissense,plddt,neighbors_10A,functional_evidence_found,sources,status
+COQ4,R240C,P,2,0.296,97.44,16,Loss of function in yeast complementation,"UniProt variant page; Brea-Calvo et al. 2015 AJHG (all identified mutations failed to rescue yeast; R240C in its variant figure); Mero et al. 2021 J Neurol (per OMIM, NOT yet verified)","Supported by sources I read; USER to confirm in AJHG 2015 full text (open access, PMC4320255)"
+COQ4,R102H,P,1,0.203,97.75,12,"Partial function (reduced but not absent growth), milder phenotype","Sarto thesis, Univ. Padova 2023/24 (abstract); Mero 2021 (per OMIM, NOT yet verified)",USER to confirm in thesis full text; wording 'residual growth' not yet seen by me
+COQ9,R276W,B,2,0.6614,96.62,20,"No functional assay found; supported benign by population frequency (gnomAD about 0.3-0.4%, a homozygote reported in LOVD)",ClinVar Miner; LOVD entries,Population evidence only; USER to confirm frequency in gnomAD directly
+COQ8B,R178W,P,2,0.3246,70.56,16,Patient-level evidence only: listed among 5 missense mutations in SRNS families; no variant-specific assay found,Ashraf et al. 2013 JCI,USER to read paper for R178W-specific data
+PDSS1,F136C,B,2,0.7083,92.38,18,None found (not searched exhaustively),-,Open
+PDSS2,K292E,P,1,0.3007,94.12,21,None found,-,Open
+PDSS2,L94P,B,1,0.9213,89.12,24,None found,-,Open
+COQ4,E161D,B,2,0.884,97.06,19,None found (not searched exhaustively),-,Open
+COQ6,G93D,B,2,0.6362,92.56,16,None found (not searched exhaustively),-,Open

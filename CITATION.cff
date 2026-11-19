@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Code for: Pathway-wide evaluation of AlphaMissense on CoQ10 biosynthesis genes"
+authors:
+  - family-names: Tadros
+    given-names: Bishoy
+    affiliation: "Medical Biotechnology Department, Badr University in Cairo"
+version: "0.1.0"
+date-released: "2026-11-19"
+license: MIT
+# doi: "ADD ZENODO DOI AFTER THE FIRST RELEASE"
+# repository-code: "ADD GITHUB URL"

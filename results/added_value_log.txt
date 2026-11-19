@@ -1,0 +1,17 @@
+Labeled variants with AlphaMissense + structure: 144 (P=67, B=77)
+
+== Test 1a: repeated 5-fold CV (10 repeats), AUROC per repeat ==
+AlphaMissense only                 mean AUROC 0.972  (range over repeats 0.968-0.975)
+Structure only (pLDDT+burial)      mean AUROC 0.868  (range over repeats 0.854-0.876)
+AlphaMissense + structure          mean AUROC 0.967  (range over repeats 0.962-0.970)
+Gain from adding structure to AlphaMissense: mean -0.005 (range -0.009 to -0.003)
+
+== Test 1b: leave-one-gene-out (train on other genes, predict held-out gene) ==
+AlphaMissense only                 AUROC 0.966  (n=144)
+Structure only (pLDDT+burial)      AUROC 0.833  (n=144)
+AlphaMissense + structure          AUROC 0.962  (n=144)
+
+== Test 2: Tier-1 rule on labeled variants (burial cut-off learned inside each training fold) ==
+AM > 0.564 only         : sensitivity 0.881, specificity 0.935, precision 0.922
+Tier-1 rule (mean/10 reps): sensitivity 0.690, specificity 0.958, precision 0.935
+(precision here uses the 46.5% pathogenic prevalence of the labeled set; real VUS prevalence is unknown and likely much lower)
